@@ -19,7 +19,7 @@ namespace GestaoEquipamentos.ConsoleApp
             Console.WriteLine("Infome o ID de registro do produto");
             novoChamado.idEquipamento = Convert.ToInt32(Console.ReadLine());
 
-            novoChamado.dataAbertura = DateTime.Now.ToString();
+            novoChamado.dataAbertura = DateTime.Now.ToShortDateString();
             novoChamado.idChamado = chamadoContador.contadorValor;
 
             salvaChamados[chamadoContador.contadorValor] = novoChamado;
