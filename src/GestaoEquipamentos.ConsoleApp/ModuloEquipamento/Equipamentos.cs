@@ -1,6 +1,6 @@
 namespace GestaoEquipamentos.ConsoleApp
 {
-    public class Produto
+    public class Equipamento
     {
         public int id;
         public string nome;
