@@ -48,7 +48,7 @@
                     case 1:
                         Console.Clear();
                         novoChamado.RegistraChamado();
-                        MensagemSucesso.Mensagem("Chamado Registrado com sucesso!");
+                        MensagemSucesso.Mensagem("Chamado Registrado com sucesso!", ConsoleColor.Green);
 
                         escolha = Menu.MenuChamado();
                         break;
@@ -66,7 +66,7 @@
                         Console.WriteLine("Por favor, informe o ID do chamado a ser EXCLUIDO");
                         int idExcluir = Convert.ToInt32(Console.ReadLine());
                         novoChamado.ExcluiChamado(idExcluir);
-                        MensagemSucesso.Mensagem("Chamado Excluido com sucesso!");
+                        MensagemSucesso.Mensagem("Chamado Excluido com sucesso!", ConsoleColor.Red);
 
                         escolha = Menu.MenuChamado();
                         break;
@@ -77,7 +77,7 @@
                         Console.WriteLine("Por favor, informe o ID do chamado a ser EDITADO");
                         int idEditar = Convert.ToInt32(Console.ReadLine());
                         novoChamado.EditaChamado(idEditar);
-                        MensagemSucesso.Mensagem("Chamado alterado com sucesso!");
+                        MensagemSucesso.Mensagem("Chamado alterado com sucesso!", ConsoleColor.Yellow);
 
                         escolha = Menu.MenuChamado();
                         break;
@@ -102,7 +102,7 @@
                     case 1:
                         Console.Clear();
                         novaLista.registraProduto();
-                        MensagemSucesso.Mensagem("Equipamento Cadastrado com sucesso!");
+                        MensagemSucesso.Mensagem("Equipamento Cadastrado com sucesso!", ConsoleColor.Green);
 
                         escolha = Menu.MenuEquipamento();
                         break;
@@ -120,7 +120,7 @@
                         Console.WriteLine("Informe o ID do produto a ser removido");
                         int id = Convert.ToInt32(Console.ReadLine());
                         novaLista.DeletaProduto(id);
-                        MensagemSucesso.Mensagem("Equipamento Removido com sucesso!");
+                        MensagemSucesso.Mensagem("Equipamento Removido com sucesso!", ConsoleColor.Red);
 
                         escolha = Menu.MenuEquipamento();
                         break;
@@ -131,7 +131,7 @@
                         Console.WriteLine("Informe o ID do produto a ser editado");
                         id = Convert.ToInt32(Console.ReadLine());
                         novaLista.EditaProduto(id);
-                        MensagemSucesso.Mensagem("Alterações Efetuadas com sucesso!");
+                        MensagemSucesso.Mensagem("Alterações Efetuadas com sucesso!", ConsoleColor.Yellow);
 
                         escolha = Menu.MenuEquipamento();
                         break;
